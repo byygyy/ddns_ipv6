@@ -14,11 +14,12 @@ def ddns_ipv6():
         if ipv6_address_last <> ipv6_address_current:
             print 'domain name is not the same, changing ....'
             alidns_update(ipv6_address_current)
+	    ipv6_address_last = ipv6_address_current
         else:
             print 'domain name is the same, wait next time check after 3600 s'
         time.sleep(3600)
 
-def alidns_update():
+def alidns_update(ipv6_address=None):
     client = AcsClient('LTAITiGjmlacminr', 'nAMZ7YLVIBwbQWiwIo5D94aBU8mf1p', 'default')
     request = CommonRequest()
     request.set_accept_format('json')
@@ -31,7 +32,7 @@ def alidns_update():
     request.add_query_param('RecordId', '17316324837254144')
     request.add_query_param('RR', 'ipv6')
     request.add_query_param('Type', 'AAAA')
-    request.add_query_param('Value', '2408:8270:450:4a88:ac19:4cd8:936a:dbe')
+    request.add_query_param('Value', ipv6_address)
 
     response = client.do_action(request)
     print(response)
