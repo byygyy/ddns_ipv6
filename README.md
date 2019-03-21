@@ -1,7 +1,7 @@
 # ddns_ipv6
 
 ## prepare the python env
-pip install -r requests.txt
+pip install -r requirements.txt
 
 ## prepare the token of aliyun sdk
 search at https://cn.aliyun.com
