@@ -1,2 +1,0 @@
-aliyun-python-sdk-core>=2.13.4
-amazon-linux-extras>=1.6.7
