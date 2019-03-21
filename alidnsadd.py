@@ -4,7 +4,7 @@
 from aliyunsdkcore.client import AcsClient
 from aliyunsdkcore.request import CommonRequest
 #client = AcsClient('<accessKeyId>', '<accessSecret>', 'default')
-client = AcsClient('LTAITiGjmlacminr', 'nAMZ7YLVIBwbQWiwIo5D94aBU8mf1p', 'default')
+client = AcsClient('<accessKeyId>', '<accessSecret>', 'default')
 
 request = CommonRequest()
 request.set_accept_format('json')
