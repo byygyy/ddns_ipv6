@@ -20,7 +20,7 @@ def ddns_ipv6():
         time.sleep(3600)
 
 def alidns_update(ipv6_address=None):
-    client = AcsClient('LTAITiGjmlacminr', 'nAMZ7YLVIBwbQWiwIo5D94aBU8mf1p', 'default')
+    client = AcsClient('<accessKeyId>', '<accessSecret>', 'default')
     request = CommonRequest()
     request.set_accept_format('json')
     request.set_domain('alidns.aliyuncs.com')
