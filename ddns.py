@@ -19,7 +19,7 @@ def ddns_ipv6():
             print 'domain name is not the same, changing ....'
             alidns_update(ipv6_address_current,'17335666358574080','ipv6','AAAA') #ipv6.lhh.fun
             alidns_update(ipv6_address_current,'17340956348144640','blog','AAAA') #blog.lhh.fun
-	    alidns_update(ipv6_address_current,'17346273820107776','@','AAAA') #robin.org.cn
+	        alidns_update(ipv6_address_current,'17346273820107776','@','AAAA') #robin.org.cn
             alidns_update(ipv6_address_current,'17346274190450688','www','AAAA') #www.robin.org.cn
             alidns_update(ipv6_address_current,'17346444077979648','up','AAAA') #up.robin.org.cn 
             ipv6_address_last = ipv6_address_current
